@@ -1,5 +1,8 @@
 # 🍕 Toppings-Treat🍅
 
+![image](https://github.com/user-attachments/assets/b4898693-6c37-4b22-8790-ad35e75bbbf8)
+
+
 Welcome to 🍕 Toppings-Treat🍅, a visually appealing and user-friendly website designed for a pizza restaurant. This project showcases an attractive layout with sections such as Home, About Us, Menu, Services, Connect, and Contact.
 
 📋 Table of Contents
