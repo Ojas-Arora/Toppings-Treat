@@ -1,6 +1,6 @@
-	/* Google Fonts */
-  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
-  * {
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
@@ -9,36 +9,35 @@
     scroll-padding-top: 2rem;
     list-style: none;
     text-decoration: none;
-  }
-  *::selection {
+}
+*::selection {
     background: var(--main-color);
     color: #fff;
-  }
-  :root {
+}
+:root {
     --main-color: #ffb411;
     --text-color: #1e1c2a;
     --bg-color: #fff;
-   
     --big-font: 4rem;
     --h2-font: 2.24rem;
     --p-font: 0.9rem;
-  }
-  section {
+}
+section {
     padding: 50px 10%;
-  }
-  body.active {
+}
+body.active {
     --bg-color: #1e1c2a;
     --text-color: #fff;
-  }
-  body {
+}
+body {
     color: var(--text-color);
     background: var(--bg-color);
-  }
-  #darkmode {
+}
+#darkmode {
     font-size: 25px;
     cursor: pointer;
-  }
-  header {
+}
+header {
     position: fixed;
     width: 100%;
     top: 0;
@@ -50,97 +49,105 @@
     background: var(--bg-color);
     padding: 18px 100px;
     box-shadow: 0 0.5rem 50rem rgba(0, 0, 0, 0.1);
-  }
-  .logo {
+}
+.logo {
     font-size: 1.2rem;
     font-weight: 600;
     color: var(--main-color);
-  }
-  .navbar {
+}
+.navbar {
     display: flex;
-  }
-  .navbar a {
+}
+.navbar a {
     font-size: 1rem;
     padding: 10px 20px;
     color: var(--text-color);
     font-weight: 500;
-  }
-  .navbar a:hover {
+}
+.navbar a:hover {
     color: var(--main-color);
-  }
-  #menu-icon {
+}
+#menu-icon {
     font-size: 2rem;
     cursor: pointer;
     display: none;
-  }
-  .home {
+}
+.home {
     width: 100%;
     min-height: 100vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 1.5rem;
-  }
-  .home-img img {
+}
+.home-img img {
     width: 100%;
-  }
-  .home-text h1 {
+    transition: transform 0.3s; /* Add transition for smooth hover effect */
+}
+.home-img img:hover {
+    transform: scale(1.1); /* Enlarge the image on hover */
+}
+.home-text h1 {
     font-size: var(--big-font);
     color: var(--main-color);
-  }
-  .home-text h2 {
+}
+.home-text h2 {
     font-size: var(--h2-font);
     margin: 1rem 0 1rem;
-  }
-  .btn {
+}
+.btn {
     display: inline-block;
     background: var(--main-color);
     padding: 10px 20px;
     border-radius: 0.5rem;
     color: #fff;
-  }
-  .btn:hover {
+}
+.btn:hover {
     background: #ffa400;
-  }
-  .about {
+}
+.about {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
     align-items: center;
-  }
-  .about-img img {
+}
+.about-img img {
     max-width: 80%;
     border-radius: 0.5rem;
-  }
-  .about-text span {
+    transition: transform 0.3s; /* Add transition for smooth hover effect */
+}
+.about-img img:hover {
+    transform: scale(1.1); /* Enlarge the image on hover */
+}
+.about-text span {
     color: var(--main-color);
     font-weight: 600;
     font-size: x-large;
-  }
-  .about-text h2 {
+}
+.about-text h2 {
     font-size: var(--h2-font);
-  }
-  .about-text p {
+}
+.about-text p {
     margin: 0.8rem 0 1.8rem;
-  }
-  .heading {
+}
+.heading {
     text-align: center;
-  }
-  .heading span {
+}
+.heading span {
     color: var(--main-color);
     font-weight: 600;
     font-size: x-large;
-  }
-  .heading h2 {
+}
+.heading h2 {
     font-size: var(--h2-font);
-  }
-  .menu-container {
+}
+.menu-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, auto));
     gap: 1.5rem;
     align-items: center;
-  }
-  .box {
+}
+.box {
     position: relative;
     margin-top: 2rem;
     height: auto;
@@ -151,30 +158,34 @@
     border-radius: 0.5rem;
     box-shadow: 0 2px 4px rgb(4 64 54 / 10%);
     padding: 10px;
-  }
-  .box-img {
+}
+.box-img {
     width: 200px;
     height: 200px;
-  }
-  .box-img img {
+}
+.box-img img {
     width: 100%;
     height: 100%;
     object-fit: contain;
     object-position: center;
-  }
-  .box h2 {
+    transition: transform 0.3s; /* Add transition for smooth hover effect */
+}
+.box-img img:hover {
+    transform: scale(1.1); /* Enlarge the image on hover */
+}
+.box h2 {
     font-size: 1.2rem;
-  }
-  .box h3 {
+}
+.box h3 {
     font-size: 1rem;
     font-weight: 400;
     margin: 4px 0 10px;
-  }
-  .box span {
+}
+.box span {
     font-size: var(--p-font);
     font-weight: 500;
-  }
-  .box .bx {
+}
+.box .bx {
     position: absolute;
     right: 0;
     top: 0;
@@ -182,151 +193,146 @@
     background: var(--main-color);
     border-radius: 0 0.5rem 0 0.5rem;
     padding: 5px 8px;
-  }
-  .box .bx:hover {
+}
+.box .bx:hover {
     background: #ffa400;
-  }
-  .servives-container {
+}
+.servives-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, auto));
     gap: 1.5rem;
     margin-top: 2rem;
-  }
-  .s-box {
+}
+.s-box {
     text-align: center;
-  }
-  .s-box img {
+}
+.s-box img {
     width: 60px;
-  }
-  .s-box h3 {
+    transition: transform 0.3s; /* Add transition for smooth hover effect */
+}
+.s-box img:hover {
+    transform: scale(1.1); /* Enlarge the icon on hover */
+}
+.s-box h3 {
     margin: 4px 0 10px;
-  }
-  .connect {
+}
+.connect {
     display: flex;
     align-items: center;
     justify-content: space-around;
-  }
-  .connect-text span {
+}
+.connect-text span {
     color: var(--main-color);
     font-weight: 600;
     font-size: x-large;
-  }
-  .connect-text h2 {
+}
+.connect-text h2 {
     font-size: var(--h2-font);
-  }
-  .contact {
+}
+.contact {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     gap: 1.5rem;
-  }
-  .contact-box h3 {
+}
+.contact-box h3 {
     margin-bottom: 1rem;
-  }
-  .social {
+}
+.social {
     display: flex;
     margin-top: 1.5rem;
-  }
-  .social i {
+}
+.social i {
     font-size: 20px;
     margin-right: 1rem;
     color: var(--text-color);
-  }
-  .social i:hover {
+    transition: transform 0.3s; /* Add transition for smooth hover effect */
+}
+.social i:hover {
     color: var(--main-color);
-  }
-  .contact-box li a {
+    transform: scale(1.1); /* Enlarge the icon on hover */
+}
+.contact-box li a {
     color: var(--text-color);
-  }
-  .contact-box li a:hover {
+}
+.contact-box li a:hover {
     color: var(--main-color);
-  }
-  .address {
+}
+.address {
     display: flex;
     flex-direction: column;
-  }
-  .address i {
+}
+.address i {
     margin-bottom: 0.5rem;
     font-size: 1rem;
-  }
-  .address span {
+}
+.address span {
     margin-left: 1rem;
-  }
-  .copyright {
+}
+.copyright {
     padding: 20px;
     text-align: center;
-  }
-  @media (max-width: 921px) {
+}
+@media (max-width: 921px) {
     header {
-      padding: 14px 41px;
+        padding: 14px 41px;
     }
     :root {
-      --big-font: 3rem;
-      --h2-font: 1.7rem;
+        --big-font: 3rem;
+        --h2-font: 1.7rem;
     }
-  }
-  @media (max-width: 768px) {
+}
+@media (max-width: 768px) {
     section {
-      padding: 50px 8%;
+        padding: 50px 8%;
     }
     #menu-icon {
-      display: initial;
-      color: var(--text-color);
+        display: initial;
+        color: var(--text-color);
     }
     header .navbar {
-      position: absolute;
-      top: -400px;
-      left: 0;
-      right: 0;
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      background: var(--bg-color);
-      box-shadow: 0 4px 4px rgb(0 0 0 / 10%);
-      transition: 0.2s ease;
+        position: absolute;
+        top: -400px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background: var(--bg-color);
+        box-shadow: 0 4px 4px rgb(0 0 0 / 10%);
+        transition: 0.2s ease;
     }
     .navbar.active {
-      top: 100%;
+        top: 100%;
     }
     .navbar a {
-      padding: 1.5rem;
-      display: block;
-      background: var(--bg-color);
+        padding: 1.5rem;
+        display: block;
+        background: var(--bg-color);
     }
     #darkmode {
-      position: absolute;
-      top: 1.4rem;
-      right: 2rem;
+        position: absolute;
+        top: 1.4rem;
+        right: 2rem;
     }
-  }
-  @media (max-width: 715px) {
+}
+@media (max-width: 715px) {
     header {
-      padding: 10px 16px;
+        padding: 10px 16px;
     }
     .home {
-      grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     }
     .about {
-      grid-template-columns: 1fr;
-      text-align: center;
+        grid-template-columns: 1fr;
+        text-align: center;
     }
-    .about-img {
-      order: 2;
+}
+@media (max-width: 550px) {
+    .box {
+        height: 200px;
     }
-  }
-  @media (max-width: 515px) {
-    .connect {
-      flex-direction: column;
+    .box-img {
+        width: 140px;
+        height: 140px;
     }
-    .connect .btn {
-      margin-top: 1rem;
-    }
-  }
-  @media (max-width: 450px) {
-    :root {
-      --big-font: 2rem;
-      --h2-font: 1.4rem;
-    }
-    .home-text {
-      padding-top: 4rem;
-    }
-  }
+}
